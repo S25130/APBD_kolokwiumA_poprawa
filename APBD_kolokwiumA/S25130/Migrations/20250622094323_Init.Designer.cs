@@ -12,7 +12,7 @@ using S25130.Data;
 namespace S25130.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250622092527_Init")]
+    [Migration("20250622094323_Init")]
     partial class Init
     {
         /// <inheritdoc />
@@ -35,14 +35,16 @@ namespace S25130.Migrations
 
                     b.Property<string>("FirstName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime>("HireDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("EmployeeId");
 
@@ -78,7 +80,8 @@ namespace S25130.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("NurseryId");
 
@@ -103,7 +106,8 @@ namespace S25130.Migrations
 
                     b.Property<string>("Role")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("BatchId", "EmployeeId");
 
@@ -182,7 +186,8 @@ namespace S25130.Migrations
 
                     b.Property<string>("LatinName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("SpeciesId");
 

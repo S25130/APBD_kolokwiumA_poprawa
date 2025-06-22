@@ -33,12 +33,12 @@ public class AppDbContext : DbContext
 
         modelBuilder.Entity<Nursery>().HasData(new List<Nursery>
         {
-            new Nursery { NurseryId = 1, Name = "Green Forest Nursery", EstablishedDate = new DateTime(2005, 5, 10) }
+            new Nursery { NurseryId = 1, Name = "Birch Forest Nursery", EstablishedDate = new DateTime(2005, 5, 10) }
         });
 
         modelBuilder.Entity<TreeSpecies>().HasData(new List<TreeSpecies>
         {
-            new TreeSpecies { SpeciesId = 1, LatinName = "Quercus robur", GrowthTimeInYears = 5 }
+            new TreeSpecies { SpeciesId = 1, LatinName = "Betula pendula", GrowthTimeInYears = 8 }
         });
 
         modelBuilder.Entity<SeedlingBatch>().HasData(new List<SeedlingBatch>
@@ -50,20 +50,20 @@ public class AppDbContext : DbContext
                 SpeciesId = 1,
                 Quantity = 500,
                 SownDate = new DateTime(2024, 3, 15),
-                ReadyDate = new DateTime(2029, 3, 15)
+                ReadyDate = new DateTime(2032, 3, 15)
             }
         });
 
         modelBuilder.Entity<Employee>().HasData(new List<Employee>
         {
-            new Employee { EmployeeId = 1, FirstName = "Anna", LastName = "Kowalska", HireDate = new DateTime(2020, 1, 1) },
-            new Employee { EmployeeId = 2, FirstName = "Jan", LastName = "Nowak", HireDate = new DateTime(2021, 2, 15) }
+            new Employee { EmployeeId = 1, FirstName = "Anna", LastName = "Jantar", HireDate = new DateTime(2017, 6, 24) },
+            new Employee { EmployeeId = 2, FirstName = "Kamil", LastName = "Grzywaczewski", HireDate = new DateTime(2021, 9, 1) }
         });
 
         modelBuilder.Entity<Responsible>().HasData(new List<Responsible>
         {
             new Responsible { BatchId = 1, EmployeeId = 1, Role = "Supervisor" },
-            new Responsible { BatchId = 1, EmployeeId = 2, Role = "Planter" }
+            new Responsible { BatchId = 1, EmployeeId = 2, Role = "Senior Planter" }
         });
     }
 }

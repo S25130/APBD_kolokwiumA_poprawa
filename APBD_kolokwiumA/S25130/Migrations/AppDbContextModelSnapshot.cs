@@ -50,15 +50,15 @@ namespace S25130.Migrations
                         {
                             EmployeeId = 1,
                             FirstName = "Anna",
-                            HireDate = new DateTime(2020, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LastName = "Kowalska"
+                            HireDate = new DateTime(2017, 6, 24, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LastName = "Jantar"
                         },
                         new
                         {
                             EmployeeId = 2,
-                            FirstName = "Jan",
-                            HireDate = new DateTime(2021, 2, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LastName = "Nowak"
+                            FirstName = "Kamil",
+                            HireDate = new DateTime(2021, 9, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LastName = "Grzywaczewski"
                         });
                 });
 
@@ -86,7 +86,7 @@ namespace S25130.Migrations
                         {
                             NurseryId = 1,
                             EstablishedDate = new DateTime(2005, 5, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Green Forest Nursery"
+                            Name = "Birch Forest Nursery"
                         });
                 });
 
@@ -119,7 +119,7 @@ namespace S25130.Migrations
                         {
                             BatchId = 1,
                             EmployeeId = 2,
-                            Role = "Planter"
+                            Role = "Senior Planter"
                         });
                 });
 
@@ -160,7 +160,7 @@ namespace S25130.Migrations
                             BatchId = 1,
                             NurseryId = 1,
                             Quantity = 500,
-                            ReadyDate = new DateTime(2029, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ReadyDate = new DateTime(2032, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SownDate = new DateTime(2024, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SpeciesId = 1
                         });
@@ -189,8 +189,8 @@ namespace S25130.Migrations
                         new
                         {
                             SpeciesId = 1,
-                            GrowthTimeInYears = 5,
-                            LatinName = "Quercus robur"
+                            GrowthTimeInYears = 8,
+                            LatinName = "Betula pendula"
                         });
                 });
 

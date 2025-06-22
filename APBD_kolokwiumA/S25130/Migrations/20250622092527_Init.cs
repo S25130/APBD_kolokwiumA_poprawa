@@ -115,24 +115,24 @@ namespace S25130.Migrations
                 columns: new[] { "EmployeeId", "FirstName", "HireDate", "LastName" },
                 values: new object[,]
                 {
-                    { 1, "Anna", new DateTime(2020, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Kowalska" },
-                    { 2, "Jan", new DateTime(2021, 2, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "Nowak" }
+                    { 1, "Anna", new DateTime(2017, 6, 24, 0, 0, 0, 0, DateTimeKind.Unspecified), "Jantar" },
+                    { 2, "Kamil", new DateTime(2021, 9, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Grzywaczewski" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Nurseries",
                 columns: new[] { "NurseryId", "EstablishedDate", "Name" },
-                values: new object[] { 1, new DateTime(2005, 5, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "Green Forest Nursery" });
+                values: new object[] { 1, new DateTime(2005, 5, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "Birch Forest Nursery" });
 
             migrationBuilder.InsertData(
                 table: "Species",
                 columns: new[] { "SpeciesId", "GrowthTimeInYears", "LatinName" },
-                values: new object[] { 1, 5, "Quercus robur" });
+                values: new object[] { 1, 8, "Betula pendula" });
 
             migrationBuilder.InsertData(
                 table: "Batches",
                 columns: new[] { "BatchId", "NurseryId", "Quantity", "ReadyDate", "SownDate", "SpeciesId" },
-                values: new object[] { 1, 1, 500, new DateTime(2029, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), 1 });
+                values: new object[] { 1, 1, 500, new DateTime(2032, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), 1 });
 
             migrationBuilder.InsertData(
                 table: "Responsibles",
@@ -140,7 +140,7 @@ namespace S25130.Migrations
                 values: new object[,]
                 {
                     { 1, 1, "Supervisor" },
-                    { 1, 2, "Planter" }
+                    { 1, 2, "Senior Planter" }
                 });
 
             migrationBuilder.CreateIndex(
